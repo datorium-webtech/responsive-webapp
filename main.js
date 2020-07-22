@@ -15,3 +15,9 @@ function toggleMenu() {
         menuButton.innerHTML = "menu";
     }
 }
+
+// Check if jQuery is working
+console.log("jQuery version: " + $().jquery);
+
+// Select the testElement and change html to "XYZ"
+$("#testElement").html("XYZ");
