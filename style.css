@@ -4,6 +4,10 @@ html, body {
     font-family: "Roboto";
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     padding: 10px;
     width: calc(100% - 20px);
