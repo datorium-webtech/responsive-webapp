@@ -57,3 +57,44 @@ function manipulateA() {
 }
 
 manipulateA();
+
+// Set the variable a to 10 and b to 5 * 2;
+a = 10;
+b = 5 * 2;
+
+if (a === b) {
+    // code if true
+    console.log("A is equal to B.");
+} else {
+    // code if false
+    console.log("A is different from B.");
+}
+
+/*
+    most popular comparisons
+    ===         ?equal
+    >   <       larger than, less than
+    >=  <=      equal or larger/less than
+    !           not (reverses boolean)    
+
+    && (AND) checks if both conditions are true
+    || (OR)  checks if at least 1 is true
+ */
+
+let vehicle = "plane";
+let wings = false;
+
+// If the vehicle is a car OR a bike, then log "road"
+// Else If the vehicle is a plane AND has wings, then log "sky"
+// Else if the vehicle is a boat, then log "water"
+// If everything was false, then log "unknown"
+
+if (vehicle === "car" || vehicle === "bike") {
+    console.log("road");
+} else if (vehicle === "plane" && wings) {
+    console.log("sky");
+} else if (vehicle === "boat") {
+    console.log("water");
+} else {
+    console.log("unknown");
+}

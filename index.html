@@ -48,8 +48,8 @@
                  * set correct number
                  * Choose a name
                  * Change price, inventory, orders -->
-            <section class="products">
-                <div class="products-header">Products</div>
+            <section class="products component">
+                <div class="component-header">Products</div>
                 <div class="product">
                     <div>
                         <div>#1</div>
@@ -108,9 +108,17 @@
                     </div>
                 </div>
             </section>
-            <section class="calculator">
-                This is a calculator.
-                <input type="button" value="Sum" onclick="calculatorSum()" />
+            <section class="calculator component">
+                <div class="component-header">
+                    Calculator
+                </div>
+                <input class="result" type="number" value="0" /><br>
+                <input type="button" value="CLEAR" />
+                <input type="button" value="=" onclick="useCalculator('equals')"/>
+                <input type="button" value="+" />
+                <input type="button" value="-" />
+                <input type="button" value="x" />
+                <input type="button" value="/" />
             </section>
         </article>
     </main>
