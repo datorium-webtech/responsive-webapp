@@ -98,3 +98,20 @@ if (vehicle === "car" || vehicle === "bike") {
 } else {
     console.log("unknown");
 }
+
+// Recap exercise
+a = 10;
+let fruit = "apple";
+
+// If a is larger than 5 AND fruit is "orange", then set a to 1
+// Else if fruit is just "orange", then set a to -1
+// Otherwise, set a to 2
+// Write a to console with a string "A is now " ... a
+if (a > 5 && fruit === "orange") {
+    a = 1;
+} else if (fruit === "orange") {
+    a = -1;
+} else {
+    a = 2;
+}
+console.log("A is now " + a);

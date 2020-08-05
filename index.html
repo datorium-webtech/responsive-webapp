@@ -113,12 +113,12 @@
                     Calculator
                 </div>
                 <input class="result" type="number" value="0" /><br>
-                <input type="button" value="CLEAR" />
+                <input type="button" value="CLEAR" onclick="clearCalculator()" />
                 <input type="button" value="=" onclick="useCalculator('equals')"/>
-                <input type="button" value="+" />
-                <input type="button" value="-" />
-                <input type="button" value="x" />
-                <input type="button" value="/" />
+                <input type="button" value="+" onclick="useCalculator('add')" />
+                <input type="button" value="-" onclick="useCalculator('subtract')" />
+                <input type="button" value="x" onclick="useCalculator('multiply')" />
+                <input type="button" value="/" onclick="useCalculator('divide')" />
             </section>
         </article>
     </main>
