@@ -115,3 +115,46 @@ if (a > 5 && fruit === "orange") {
     a = 2;
 }
 console.log("A is now " + a);
+
+/*
+ * let i = 0    i starts at 0
+ * i < 5        loop repeats until i is 5 (not included), so largest i can be is 4
+ * i++          increase i by 1 each loop
+ */
+for (let i = 0; i < 5; i++) {
+    console.log("Loop: " + i);
+}
+
+// Array - a list of variables, objects, data
+let exampleArray = ["house", "car", "door"];
+console.log("Example array: " + exampleArray + " is this long = " + exampleArray.length);
+exampleArray.push("window");
+console.log("First item in array: " + exampleArray[0]);
+// Mini task: set the first item to "office" and set the third item to "bike"
+exampleArray[0] = "office";
+exampleArray[2] = "bike";
+console.log("exampleArray after modifications: " + exampleArray);
+
+// Jsons - List, but rather than index (numbers), values are stores by keys (id / names)
+let exampleJson = {
+    color: "red", // values seperated by comma
+    vehicle: "boat",
+    speed: 13
+}
+console.log("Type of vehicle " + exampleJson["vehicle"]); // exampleJson.vehicle also works
+
+// Exercise
+let exerciseArray = [1, 3, 5];
+/*
+ * Write a loop that [starts with 3 as iterator] and [ends with 15 (not included)] and [increases by 1 each loop]
+ * Loop logs (writes to console) the iterator
+ * If the iterator is larger than 10, push the iterator in the array
+ */
+for (let i = 3; i < 15; i++) {
+    console.log(i);
+    if (i > 10) {
+        exerciseArray.push(i);
+    }
+}
+// Log the result
+console.log(exerciseArray);

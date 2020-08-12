@@ -1,10 +1,10 @@
 console.log("Starting calculator!");
 
-a = 12;
-b = 9;
+let numA = 12;
+let numB = 9;
 
 function calculatorSum() {
-    let result = a + b;
+    let result = numA + numB;
     document.querySelector(".calculator").innerHTML = result;
 }
 

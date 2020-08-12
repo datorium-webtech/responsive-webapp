@@ -236,7 +236,55 @@ aside a .material-icons {
     justify-content: flex-end;
 }
 
+/* 
+ * Select the input field for calculator
+ * width should be the full 100% with 20px margins on both sides
+ * put spacing below the element as 15px;
+ * height to 40px
+ * TEXT styling: color #444444, "Courier New" font, size 26px, make it bold
+ */
+.calculator .result {
+    margin: 0px 20px 15px 20px;
+    width: calc(100% - 40px);
+    height: 40px;
+    color: #444444;
+    font-family: "Courier New";
+    font-size: 26px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
 
+/*
+ * select buttons wrapper 
+ * put margins as top 0px sides 20px bottom 10px
+ * width as full 100% 
+ * flex in a row that wraps 
+ * justify content as space-between
+ */
+.calculator .buttons {
+    margin: 0px 20px 10px 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*
+ * select the individual buttons
+ * margin bottom as 10px;
+ * width at 48%
+ * height at 40px;
+ * text color as #444444, size 20px and bold
+ */
+.calculator .buttons input[type="button"] {
+    margin-bottom: 10px;
+    width: 48%;
+    height: 40px;
+    color: #444444;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 @media (min-width: 1024px) {
     .financials div {
@@ -246,6 +294,20 @@ aside a .material-icons {
 
     .financials > div > .figure {
         font-size: 26px;
+    }
+
+    /*
+     * if screen is larger than 1024px:
+     * set calculator result font-size as 14px and height as 30px;
+     *calculator width as just plain 20% (no calc);
+     */
+    .calculator {
+        width: 20%;
+    }
+
+    .calculator .result {
+        height: 30px;
+        font-size: 14px;
     }
 }
 
